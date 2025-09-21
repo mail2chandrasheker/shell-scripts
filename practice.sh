@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "echo hello git"
+echo "echo this is udpate 1"
