@@ -2,3 +2,7 @@
 echo "ALL variable passed to the script $@"
 echo "ALL variable passed to the secript $*"
 echo "script name: $0"
+echo "current directory $pwd"
+echo  "who is running user $user"
+echo "home directory of user $HOME"
+echo "PID of ths script: $$"
