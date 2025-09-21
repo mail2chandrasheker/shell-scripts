@@ -1,5 +1,6 @@
 #!/bin/bash
 n1=100
 n2=200
-sum=$(n1+n2)
+s=devops
+sum=$(($n1+$n2+$s)
 echo "sum of two number $sum"
