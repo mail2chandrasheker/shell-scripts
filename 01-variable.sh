@@ -1,3 +1,8 @@
 #!//bin/bash
 DATE=$(date)
-echo "Timeshtam exceted $DATE"
+
+START_TIME=$(date +%s)
+sleep 10 &
+END_TIME=$(date +%s)
+TOTAL_TIME=$($END_TIME-$START_TIME)
+echo "Timeshtam exceted $TOTAL_TIME"
