@@ -1,5 +1,5 @@
 #!/bin/bash
-ls /ete/passwd
+ls /etc/passwd
 
 echo "status: $?"
 
