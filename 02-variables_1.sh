@@ -1,3 +1,3 @@
 #!/bin/bash
-name ="chandra"
+name="chandra"
 echo "my name $name"
