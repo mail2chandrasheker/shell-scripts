@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Myprogram name is: $0"
+echo "First argument: $1"
+echo "Secord argument: $2"
+echo "Total arguments: $#" 
+echo "total arugments: $#"
+echo "All arguments: $@"
+echo "all arguments(string): $*"
+echo "current script  process id (pid): $$"
+echo "last command exist status $?"
+echo "last argument of last command $_"
