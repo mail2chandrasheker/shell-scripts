@@ -14,9 +14,11 @@ validate(){
         echo "Error:: insatalling $2 is failed"
     else
         echo "installing $2 is success"
+    fi
 }
 
 dnf install mysql -y
 validate $? "MYSQL"
+
 dnf install nginx -y
 validate $? "Nginx"
