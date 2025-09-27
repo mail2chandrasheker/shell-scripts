@@ -4,7 +4,7 @@
 
 userid=$(id  -u)
 
-if [ "$userid"   -ne  0] ; then
+if [ "$userid"   -ne  0 ] ; then
    echo "Error:: you   are  not root user"
    exit 1
 fi
