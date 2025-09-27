@@ -1,0 +1,2 @@
+ls: cannot access '/etc/password': No such file or directory
+ls: cannot access '/no/file': No such file or directory
