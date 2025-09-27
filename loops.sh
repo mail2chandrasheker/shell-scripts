@@ -29,6 +29,12 @@ validate(){
 
 for package in $@
 do
-   echo "pakcag is:  $package"
+   dnf list installed $package &>>$log_file
+   #if exit status
+    if [ $? -ne 0 ] ; then
+       dnf install $package -y &>>$log_file
+       validate  $? "$package"
+     else
+        echo -e "pakcag is already installed ...$Y skippping $n"
 done
 
