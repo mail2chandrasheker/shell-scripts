@@ -36,5 +36,6 @@ do
        validate  $? "$package"
      else
         echo -e "pakcag is already installed ...$Y skippping $n"
+     fi
 done
 
