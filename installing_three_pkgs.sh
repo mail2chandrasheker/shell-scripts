@@ -4,7 +4,7 @@
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-
+Y="\e[033m"
 userid=$(id  -u)
 
 if [ "$userid"   -ne  0 ] ; then
@@ -20,8 +20,18 @@ validate(){
     fi
 }
 
-dnf install mysql -y
-validate $? "MYSQL"
+dnf list listalled mysql
+if [ $? -ne 0 ];then
+  dnf install mysql -y
+  validate $? "MYSQL"
+elso
+    echo -e "Mysql already exist ...$Y SKipping$N"
+fi
 
-dnf install nginx -y
-validate $? "Nginx"
+dnf list installed nginx
+if [ $? -ne 0 ] ; then
+   dnf install nginx -y
+   validate $? "Nginx"
+else
+   echo -e "nginx already exist...$Y Skipping$N"
+fi
